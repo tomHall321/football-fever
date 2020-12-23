@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import './styles/playerForm.css';
+@import './styles/playersList.css';
+@import './styles/numberOfPlayers.css';
