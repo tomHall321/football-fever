@@ -1,15 +1,13 @@
 import React from 'react';
 import NumberOfPlayers from './components/NumberOfPlayers';
-import PlayerForm from './components/PlayerForm';
-import PlayersList from './components/PlayersList';
+import Main from './components/Main/Main';
 
 
 function App() {
   return (
     <>
       <NumberOfPlayers />
-      <PlayerForm />
-      <PlayersList/>
+      <Main/>
     </>
   );
 }

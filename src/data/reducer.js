@@ -26,7 +26,7 @@ const checkPlayerNumbers = state => {
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "ADD_PLAYER": return addPlayer(state, action);
+        case "ADD_PLAYER": return checkPlayerNumbers(addPlayer(state, action));
         default: return state;
     }
 };
