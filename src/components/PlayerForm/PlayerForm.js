@@ -44,10 +44,10 @@ class PlayerForm extends Component {
         return (
             <form
                 onSubmit={this.handleSubmit}
-                className="form-container"
+                className="player-form-container"
             >
 
-                <div className="form-inputs">
+                <div className="player-form-inputs">
 
                     <FormField
                         name={"player-name"}
@@ -93,7 +93,7 @@ class PlayerForm extends Component {
 
                 <button
                     type="submit"
-                    className="playerForm-btn"
+                    className="player-form-btn"
                 >Add player</button>
 
             </form>
