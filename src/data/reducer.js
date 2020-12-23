@@ -10,12 +10,25 @@ const addPlayer = (state, { data }) => {
 
 };
 
+// if currentNoOfPlayers is not equal to state.numberOfPlayers then tooManyPlayers state will be changed to true
+const checkPlayerNumbers = state => {
+
+    const currentNoOfPlayers = state.players.length;
+
+    const tooManyPlayers = currentNoOfPlayers === state.numberOfPlayers;
+
+    return {
+        ...state,
+        tooManyPlayers,
+    };
+
+};
+
 const reducer = (state, action) => {
     switch (action.type) {
-        case "ADD_PLAYER": return addPlayer(state, action);
+        case "ADD_PLAYER": return checkPlayerNumbers(addPlayer(state, action));
         default: return state;
     }
 };
-
 
 export default reducer; 
