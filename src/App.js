@@ -1,6 +1,7 @@
 import React from 'react';
 import NumberOfPlayers from './components/NumberOfPlayers/NumberOfPlayers';
 import PlayerForm from './components/PlayerForm';
+import PlayersList from './components/PlayersList';
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <>
       <NumberOfPlayers />
       <PlayerForm />
+      <PlayersList/>
     </>
   );
 }
