@@ -1,5 +1,5 @@
 import React from 'react';
-import NumberOfPlayers from './components/NumberOfPlayers/NumberOfPlayers';
+import NumberOfPlayers from './components/NumberOfPlayers';
 import PlayerForm from './components/PlayerForm';
 import PlayersList from './components/PlayersList';
 
