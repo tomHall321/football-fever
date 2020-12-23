@@ -2,13 +2,19 @@ import React from 'react';
 import PlayerForm from '../PlayerForm/';
 import PlayersList from '../PlayersList';
 
-const Main = () => {
+const Main = ({ tooManyPlayers }) => {
 
     return (
-        <>
-            <PlayerForm />
-            <PlayersList />
-        </>
+
+        !tooManyPlayers ?
+            <>
+                <PlayerForm />
+                <PlayersList />
+            </>
+            :
+            <>
+                <PlayersList />
+            </>
 
     );
 
