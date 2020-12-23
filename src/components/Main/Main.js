@@ -10,7 +10,6 @@ const Main = () => {
             <PlayersList />
         </>
 
-
     );
 
 };

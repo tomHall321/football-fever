@@ -14,15 +14,15 @@ const addPlayer = (state, { data }) => {
 const checkPlayerNumbers = state => {
 
     const currentNoOfPlayers = state.players.length;
-  
+
     const tooManyPlayers = currentNoOfPlayers === state.numberOfPlayers;
-    
+
     return {
-      ...state,
-      tooManyPlayers,
+        ...state,
+        tooManyPlayers,
     };
-  
-  };
+
+};
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -30,6 +30,5 @@ const reducer = (state, action) => {
         default: return state;
     }
 };
-
 
 export default reducer; 
