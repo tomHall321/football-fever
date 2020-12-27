@@ -1,5 +1,5 @@
 const initial = {
-    numberOfPlayers: 10,
+    numberOfPlayers: 8,
     players: [],
     tooManyPlayers: false,
     playersTeam1: [],
