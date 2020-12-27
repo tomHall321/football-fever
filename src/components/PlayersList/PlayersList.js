@@ -1,38 +1,29 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class PlayersList extends Component {
+const PlayersList = ({ players }) => {
 
-    //currently no need for a constructor 
-    //this will change as likely a method will be needed (button with an associated action to create teams)
+    return (
 
-    render() {
+        <section className="players-list-container">
 
-        const { players } = this.props;
+            <h3 className="players-list-header">Playing this time...</h3>
 
-        return (
-            <section>
+            <ul className="players-list">
+                {/* iterating through players array, accessing name and skill properties */}
+                {players.map((player, index) => {
+                    return (
+                        <li className="player-card" key={index}>
 
-                <div className="players-list-container">
+                            <p className="player-name">{player.name}</p>
+                            <p className="player-skill">skill: {player.skill}</p>
 
-                    <h3 className="players-list-header">Playing this time...</h3>
+                        </li>
+                    )
+                })}
+            </ul>
 
-                    <ul className="players-list">
-                        {/* iterating through players array, accessing name and skill properties */}
-                        {players.map((player, index) => {
-                            return (
-                                <li className="player-card" key={index}>
-                                    <p className="player-name">{player.name}</p>
-                                    <p className="player-skill">skill: {player.skill}</p>
-                                </li>
-                            )
-                        })}
-                    </ul>
-
-                </div>
-
-            </section>
-        );
-    };
+        </section>
+    );
 };
 
 export default PlayersList;
