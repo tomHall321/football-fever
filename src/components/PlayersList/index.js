@@ -1,6 +1,16 @@
 import { connect } from 'react-redux';
 import PlayersList from './PlayersList';
+import { createTeams } from '../../data/action';
 
 const mapStateToProps = ({ players }) => ({ players });
 
-export default connect(mapStateToProps)(PlayersList);
+const mapDispatchToProps = dispatch => {
+
+
+    return {
+        handleCreateTeams: () => dispatch(createTeams())
+    };
+
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlayersList);
