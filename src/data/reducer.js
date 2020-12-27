@@ -26,9 +26,13 @@ const checkPlayerNumbers = state => {
 
 const createTeams = (state) => {
     let playersArray = state.players;
+
+    const shuffle = (playersArray) => playersArray.sort(() => 0.5 - Math.random());
+
+    let newArr = shuffle(playersArray);
     
-    let team1 = playersArray.slice(0, 5);
-    let team2 = playersArray.slice(5, 10);
+    let team1 = newArr.slice(0, 5);
+    let team2 = newArr.slice(5, 10);
   
     return {
       ...state,
