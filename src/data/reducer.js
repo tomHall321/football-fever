@@ -24,9 +24,25 @@ const checkPlayerNumbers = state => {
 
 };
 
+const createTeams = (state) => {
+    let playersArray = state.players;
+    
+    let team1 = playersArray.slice(0, 5);
+    let team2 = playersArray.slice(5, 10);
+  
+    return {
+      ...state,
+      playersTeam1: team1,
+      playersTeam2: team2,
+      players: [],
+    };
+  };
+  
+
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER": return checkPlayerNumbers(addPlayer(state, action));
+        case "CREATE_TEAMS": return createTeams(state);
         default: return state;
     }
 };
