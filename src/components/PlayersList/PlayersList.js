@@ -7,15 +7,10 @@ class PlayersList extends Component {
 
     render() {
 
-        const { players, handleCreateTeams } = this.props;
+        const { players } = this.props;
 
         return (
             <section>
-
-                <button
-                    className="btn-confirmsteams"
-                    onClick={() => handleCreateTeams()}
-                >Confirm teams</button>
 
                 <div className="players-list-container">
 
