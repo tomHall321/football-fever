@@ -1,4 +1,5 @@
 import React from 'react';
+import CreateTeamsBtn from '../CreateTeamsBtn';
 import PlayerForm from '../PlayerForm/';
 import PlayersList from '../PlayersList';
 import Team1 from '../Teams/Team1';
@@ -14,10 +15,12 @@ const Main = ({ tooManyPlayers }) => {
                 <PlayersList />
             </>
             :
-            <>
-                <PlayersList />
+            <> 
+            <section className="wrapper">
+                <CreateTeamsBtn/>
                 <Team1 />
                 <Team2 />
+            </section> 
             </>
 
     );
