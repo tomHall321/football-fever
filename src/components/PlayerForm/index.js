@@ -17,4 +17,10 @@ const mapDispatchToProps = dispatch => {
 
 };
 
-export default connect(null, mapDispatchToProps)(PlayerForm);
+const mapStateToProps = ({ tooManyPlayers }) => {
+    return {
+        tooManyPlayers: tooManyPlayers,
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerForm);
