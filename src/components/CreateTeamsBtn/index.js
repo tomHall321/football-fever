@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import CreateTeamsBtn from './CreateTeamsBtn';
 import { createTeams } from '../../data/action';
 
-const mapStateToProps = ({ teamGenerated }) => ({ teamGenerated });
+const mapStateToProps = ({ tooManyPlayers }) => ({ tooManyPlayers });
 
 const mapDispatchToProps = dispatch => {
 

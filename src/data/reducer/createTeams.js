@@ -13,7 +13,7 @@ const createTeams = state => {
         playersTeam1: team1,
         playersTeam2: team2,
         players: [],
-        // teamGenerated: true,
+        teamGenerated: true,
     };
 };
 

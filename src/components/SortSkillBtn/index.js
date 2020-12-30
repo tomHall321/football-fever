@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 import SkillTeamsBtn from './SortSkillBtn';
 import { createTeams } from '../../data/action';
 
+const mapStateToProps = ({ tooManyPlayers }) => ({ tooManyPlayers });
+
 const mapDispatchToProps = dispatch => {
 
     return {
@@ -10,4 +12,4 @@ const mapDispatchToProps = dispatch => {
     
 };
 
-export default connect(null, mapDispatchToProps)(SkillTeamsBtn);
+export default connect(mapStateToProps, mapDispatchToProps)(SkillTeamsBtn);
