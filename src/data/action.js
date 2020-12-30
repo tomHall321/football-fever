@@ -17,6 +17,15 @@ export const addTeamNames = data => {
 
 };
 
+export const changeNumberOfPlayers = value => {
+
+    return {
+        type: "CHANGE_NO_OF_PLAYERS",
+        value,
+    };
+
+};
+
 export const createTeams = () => {
 
     return {
