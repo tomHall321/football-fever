@@ -2,6 +2,8 @@ import { connect } from 'react-redux';
 import OnToTeamsBtn from './OnToTeamsBtn';
 import { checkPlayerAndTeamNaming } from '../../data/action';
 
+const mapStateToProps = ({ tooManyPlayers }) => ({ tooManyPlayers });
+
 const mapDispatchToProps = dispatch => {
 
     return {
@@ -10,4 +12,4 @@ const mapDispatchToProps = dispatch => {
     
 };
 
-export default connect(null, mapDispatchToProps)(OnToTeamsBtn);
+export default connect(mapStateToProps, mapDispatchToProps)(OnToTeamsBtn);
