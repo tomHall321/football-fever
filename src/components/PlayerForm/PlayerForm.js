@@ -10,6 +10,8 @@ class PlayerForm extends Component {
         this.state = {
             playerName: "",
             playerSkill: "",
+            teamName1: "Home Team",
+            teamName2: "Away Team",
         };
 
         this.handleName = this.handleName.bind(this);
@@ -48,6 +50,20 @@ class PlayerForm extends Component {
             >
 
                 <div className="player-form-inputs">
+
+                    <FormField
+                        label="Change Team 1 name:"
+                        name="team-name"
+                        type="text"
+                        containerClass={"form-field"}
+                    />
+
+                    <FormField
+                        label="Change Team 2 name:"
+                        name="team-name"
+                        type="text"
+                        containerClass={"form-field"}
+                    />
 
                     <FormField
                         name={"player-name"}
