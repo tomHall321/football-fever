@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OnToTeamsBtn = ({ tooManyPlayers }) => {
+const OnToTeamsBtn = ({ tooManyPlayers, playersAndTeamNamesFinished }) => {
 
     return (
 
