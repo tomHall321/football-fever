@@ -7,6 +7,7 @@ const initial = {
     playersTeam2: [],
     min: 2,
     max: 22,
+    teamGenerated: false,
 };
 
 export default initial;
