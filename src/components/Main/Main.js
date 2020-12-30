@@ -6,6 +6,7 @@ import PlayersList from '../PlayersList';
 import OnToTeamsBtn from '../OnToTeamsBtn';
 import Team1 from '../Teams/Team1';
 import Team2 from '../Teams/Team2';
+import SkillTeamsBtn from '../SortSkillBtn';
 
 const Main = ({ tooManyPlayers, playersAndTeamNamesFinished }) => {
 
@@ -22,6 +23,7 @@ const Main = ({ tooManyPlayers, playersAndTeamNamesFinished }) => {
             <> 
             <section className="wrapper">
                 <CreateTeamsBtn/>
+                <SkillTeamsBtn/>
                 <Team1 />
                 <Team2 />
             </section> 
