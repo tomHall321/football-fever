@@ -10,6 +10,15 @@ const addPlayer = (state, { data }) => {
 
 };
 
+const addTeamNames = (state, { data }) => {
+    return {
+        ...state,
+        teamName1: data.teamName1,
+        teamName2: data.teamName2,
+    };
+
+};
+
 // if currentNoOfPlayers is not equal to state.numberOfPlayers then tooManyPlayers state will be changed to true
 const checkPlayerNumbers = state => {
 
@@ -42,10 +51,10 @@ const createTeams = (state) => {
     };
 };
 
-
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER": return checkPlayerNumbers(addPlayer(state, action));
+        case "ADD_TEAM_NAMES": return addTeamNames(state, action);
         case "CREATE_TEAMS": return createTeams(state);
         default: return state;
     }

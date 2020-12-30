@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import PlayerForm from './PlayerForm';
 import { addPlayer } from '../../data/action';
+import { addTeamNames } from '../../data/action';
 
 //using addPlayer function here, creates action object literal for us
 // pass in a function that accepts a value
@@ -8,11 +9,12 @@ import { addPlayer } from '../../data/action';
 const mapDispatchToProps = dispatch => {
 
     return {
-        handleSubmit: data => { 
+        handleSubmit: data => {
             dispatch(addPlayer(data));
+            dispatch(addTeamNames(data));
         }
     };
-    
+
 };
 
 export default connect(null, mapDispatchToProps)(PlayerForm);

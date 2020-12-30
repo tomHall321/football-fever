@@ -10,10 +10,14 @@ class PlayerForm extends Component {
         this.state = {
             playerName: "",
             playerSkill: "",
+            teamName1: "Home Team",
+            teamName2: "Away Team",
         };
 
         this.handleName = this.handleName.bind(this);
         this.handleSkill = this.handleSkill.bind(this);
+        this.handleTeamName1 = this.handleTeamName1.bind(this);
+        this.handleTeamName2 = this.handleTeamName2.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
@@ -24,6 +28,20 @@ class PlayerForm extends Component {
         });
     };
 
+    //update team1 name state
+    handleTeamName1 = e => {
+        this.setState({
+            teamName1: e.currentTarget.value
+        });
+    }
+
+    //update team2 name state
+    handleTeamName2 = e => {
+        this.setState({
+            teamName2: e.currentTarget.value
+        });
+    }
+
     //update player skill state
     handleSkill = e => {
         this.setState({
@@ -32,14 +50,14 @@ class PlayerForm extends Component {
     };
 
     //pass data up when form is submitted
-    handleSubmit = (e) => {
+    handleSubmit = e => {
         e.preventDefault();
         this.props.handleSubmit({ ...this.state });
     };
 
     render() {
 
-        const { playerName, playerSkill } = this.state;
+        const { playerName, playerSkill, teamName1, teamName2 } = this.state;
 
         return (
             <form
@@ -48,6 +66,24 @@ class PlayerForm extends Component {
             >
 
                 <div className="player-form-inputs">
+
+                    <FormField
+                        label="Change Team 1 name:"
+                        name="team-name"
+                        type="text"
+                        handleChange={this.handleTeamName1}
+                        value={teamName1}
+                        containerClass={"form-field"}
+                    />
+
+                    <FormField
+                        label="Change Team 2 name:"
+                        name="team-name"
+                        type="text"
+                        handleChange={this.handleTeamName2}
+                        value={teamName2}
+                        containerClass={"form-field"}
+                    />
 
                     <FormField
                         name={"player-name"}
