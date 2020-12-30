@@ -1,18 +1,22 @@
 import React from 'react';
+import NumberOfPlayers from '../NumberOfPlayers';
 import CreateTeamsBtn from '../CreateTeamsBtn';
-import PlayerForm from '../PlayerForm/';
+import PlayerForm from '../PlayerForm';
 import PlayersList from '../PlayersList';
+import OnToTeamsBtn from '../OnToTeamsBtn';
 import Team1 from '../Teams/Team1';
 import Team2 from '../Teams/Team2';
 
-const Main = ({ tooManyPlayers }) => {
+const Main = ({ tooManyPlayers, playersAndTeamNamesFinished }) => {
 
     return (
 
-        !tooManyPlayers ?
-            <>
+        !playersAndTeamNamesFinished ?
+            <>  
+                <NumberOfPlayers />
                 <PlayerForm />
                 <PlayersList />
+                <OnToTeamsBtn/>
             </>
             :
             <> 

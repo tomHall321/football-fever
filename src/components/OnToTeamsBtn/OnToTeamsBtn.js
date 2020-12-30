@@ -1,13 +1,13 @@
 import React from 'react';
 
-const OnToTeamsBtn = ({ tooManyPlayers, playersAndTeamNamesFinished }) => {
+const OnToTeamsBtn = ({ tooManyPlayers, handlePlayersFinished }) => {
 
     return (
 
         <button
             className="btn-confirms-players-teamNames"
-            onClick={}
-            disabled= {}
+            onClick={() => handlePlayersFinished()}
+            disabled= {false}
         >Finished with player creation and Team Names</button>
 
     );
