@@ -59,6 +59,8 @@ class PlayerForm extends Component {
 
         const { playerName, playerSkill, teamName1, teamName2 } = this.state;
 
+        const { tooManyPlayers } = this.props;
+
         return (
             <form
                 onSubmit={this.handleSubmit}
@@ -130,6 +132,7 @@ class PlayerForm extends Component {
                 <button
                     type="submit"
                     className="player-form-btn"
+                    disabled={tooManyPlayers ? true : false}
                 >Add player</button>
 
             </form>
