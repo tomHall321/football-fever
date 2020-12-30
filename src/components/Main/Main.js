@@ -1,29 +1,27 @@
 import React from 'react';
 import NumberOfPlayers from '../NumberOfPlayers';
-import CreateTeamsBtn from '../CreateTeamsBtn';
+import RandomTeamsBtn from '../RandomTeamsBtn';
 import PlayerForm from '../PlayerForm';
 import PlayersList from '../PlayersList';
-import OnToTeamsBtn from '../OnToTeamsBtn';
 import Team1 from '../Teams/Team1';
 import Team2 from '../Teams/Team2';
 import SkillTeamsBtn from '../SortSkillBtn';
 
-const Main = ({ tooManyPlayers, playersAndTeamNamesFinished }) => {
+const Main = ({ tooManyPlayers, teamGenerated }) => {
 
     return (
 
-        !playersAndTeamNamesFinished ?
+        !teamGenerated ?
             <>  
                 <NumberOfPlayers />
                 <PlayerForm />
                 <PlayersList />
-                <OnToTeamsBtn/>
+                <RandomTeamsBtn/>
+                <SkillTeamsBtn/>
             </>
             :
             <> 
             <section className="wrapper">
-                <CreateTeamsBtn/>
-                <SkillTeamsBtn/>
                 <Team1 />
                 <Team2 />
             </section> 

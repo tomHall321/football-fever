@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import SkillTeamsBtn from './SortSkillBtn';
+import RandomTeamsBtn from './RandomTeamsBtn';
 import { createRandomTeams } from '../../data/action';
 
 const mapStateToProps = ({ tooManyPlayers }) => ({ tooManyPlayers });
@@ -7,9 +7,9 @@ const mapStateToProps = ({ tooManyPlayers }) => ({ tooManyPlayers });
 const mapDispatchToProps = dispatch => {
 
     return {
-        handleSkillTeams: () => dispatch(createRandomTeams())
+        handleCreateTeams: () => dispatch(createRandomTeams())
     };
     
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SkillTeamsBtn);
+export default connect(mapStateToProps, mapDispatchToProps)(RandomTeamsBtn);

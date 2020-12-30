@@ -26,19 +26,10 @@ export const changeNumberOfPlayers = value => {
 
 };
 
-export const checkPlayerAndTeamNaming = value => {
+export const createRandomTeams = () => {
 
     return {
-        type: "FINISH_NAMING",
-        value,
-    };
-
-};
-
-export const createTeams = () => {
-
-    return {
-        type: "CREATE_TEAMS",
+        type: "CREATE_RANDOM_TEAMS",
     };
 
 };
