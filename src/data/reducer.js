@@ -1,3 +1,5 @@
+import initial from './initial';
+
 //reducer function updated to respond to action, this will update the initial state of 'players' and result in an array of player objects
 const addPlayer = (state, { data }) => {
     return {
@@ -75,6 +77,7 @@ const reducer = (state, action) => {
         case "CHANGE_NO_OF_PLAYERS": return checkPlayerNumbers(changeNumberOfPlayers(state, action));
         case "FINISH_NAMING": return checkPlayerAndTeamNaming(state);
         case "CREATE_TEAMS": return createTeams(state);
+        case "RESET": return initial;
         default: return state;
     }
 };
