@@ -8,6 +8,15 @@ export const addPlayer = data => {
 
 };
 
+export const addTeamNames = data => {
+
+    return {
+        type: "ADD_TEAM_NAMES",
+        data,
+    };
+
+};
+
 export const createTeams = () => {
 
     return {

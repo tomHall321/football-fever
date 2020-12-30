@@ -57,7 +57,7 @@ class PlayerForm extends Component {
 
     render() {
 
-        const { playerName, playerSkill } = this.state;
+        const { playerName, playerSkill, teamName1, teamName2 } = this.state;
 
         return (
             <form
@@ -71,6 +71,8 @@ class PlayerForm extends Component {
                         label="Change Team 1 name:"
                         name="team-name"
                         type="text"
+                        handleChange={this.handleTeamName1}
+                        value={teamName1}
                         containerClass={"form-field"}
                     />
 
@@ -78,6 +80,8 @@ class PlayerForm extends Component {
                         label="Change Team 2 name:"
                         name="team-name"
                         type="text"
+                        handleChange={this.handleTeamName2}
+                        value={teamName2}
                         containerClass={"form-field"}
                     />
 
