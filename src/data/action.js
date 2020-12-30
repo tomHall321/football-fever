@@ -26,6 +26,15 @@ export const changeNumberOfPlayers = value => {
 
 };
 
+export const checkPlayerAndTeamNaming = value => {
+
+    return {
+        type: "FINISH_NAMING",
+        value,
+    };
+
+};
+
 export const createTeams = () => {
 
     return {
