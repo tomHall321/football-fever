@@ -16,6 +16,8 @@ class PlayerForm extends Component {
 
         this.handleName = this.handleName.bind(this);
         this.handleSkill = this.handleSkill.bind(this);
+        this.handleTeamName1 = this.handleTeamName1.bind(this);
+        this.handleTeamName2 = this.handleTeamName2.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     };
 
@@ -26,6 +28,20 @@ class PlayerForm extends Component {
         });
     };
 
+    //update team1 name state
+    handleTeamName1 = e => {
+        this.setState({
+            teamName1: e.currentTarget.value
+        });
+    }
+
+    //update team2 name state
+    handleTeamName2 = e => {
+        this.setState({
+            teamName2: e.currentTarget.value
+        });
+    }
+
     //update player skill state
     handleSkill = e => {
         this.setState({
@@ -34,7 +50,7 @@ class PlayerForm extends Component {
     };
 
     //pass data up when form is submitted
-    handleSubmit = (e) => {
+    handleSubmit = e => {
         e.preventDefault();
         this.props.handleSubmit({ ...this.state });
     };
