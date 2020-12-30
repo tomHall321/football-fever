@@ -1,12 +1,13 @@
 import React from 'react';
 
-const CreateTeamsBtn = ({ handleCreateTeams }) => {
+const CreateTeamsBtn = ({ handleCreateTeams, teamGenerated }) => {
 
     return (
 
         <button
             className="btn-confirmsteams"
             onClick={() => handleCreateTeams()}
+            disabled={!teamGenerated ? false : true}
         >Draw random teams</button>
 
     );
