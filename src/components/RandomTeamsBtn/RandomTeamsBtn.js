@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CreateTeamsBtn = ({ handleCreateTeams, tooManyPlayers }) => {
+const RandomTeamsBtn = ({ handleCreateTeams, tooManyPlayers }) => {
 
     return (
 
@@ -13,4 +13,4 @@ const CreateTeamsBtn = ({ handleCreateTeams, tooManyPlayers }) => {
     );
 };
 
-export default CreateTeamsBtn;
+export default RandomTeamsBtn;

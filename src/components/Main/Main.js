@@ -1,6 +1,6 @@
 import React from 'react';
 import NumberOfPlayers from '../NumberOfPlayers';
-import CreateTeamsBtn from '../CreateTeamsBtn';
+import RandomTeamsBtn from '../RandomTeamsBtn';
 import PlayerForm from '../PlayerForm';
 import PlayersList from '../PlayersList';
 import Team1 from '../Teams/Team1';
@@ -16,7 +16,7 @@ const Main = ({ tooManyPlayers, teamGenerated }) => {
                 <NumberOfPlayers />
                 <PlayerForm />
                 <PlayersList />
-                <CreateTeamsBtn/>
+                <RandomTeamsBtn/>
                 <SkillTeamsBtn/>
             </>
             :

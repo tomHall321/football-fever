@@ -1,5 +1,5 @@
 import initial from '../initial';
-import createTeams from './createTeams';
+import createRandomTeams from './createRandomTeams';
 import addPlayer from './addPlayer';
 import addTeamNames from './addTeamNames';
 import changeNumberOfPlayers from './changeNumberOfPlayers';
@@ -10,7 +10,7 @@ const reducer = (state, action) => {
         case "ADD_PLAYER": return checkPlayerNumbers(addPlayer(state, action));
         case "ADD_TEAM_NAMES": return addTeamNames(state, action);
         case "CHANGE_NO_OF_PLAYERS": return checkPlayerNumbers(changeNumberOfPlayers(state, action));
-        case "CREATE_TEAMS": return createTeams(state);
+        case "CREATE_RANDOM_TEAMS": return createRandomTeams(state);
         case "RESET": return initial;
         default: return state;
     }
