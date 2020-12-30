@@ -42,6 +42,13 @@ const checkPlayerNumbers = state => {
 
 };
 
+const checkPlayerAndTeamNaming = (state) => {
+    return {
+      ...state,
+      playersAndTeamNamesFinished: true,
+    };
+  }
+
 const createTeams = (state) => {
     let playersArray = state.players;
 
