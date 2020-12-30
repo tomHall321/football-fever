@@ -1,11 +1,13 @@
 import React from 'react';
 
-const TeamList = ({ playersTeam }) => {
+const TeamList = ({ playersTeam, teamName }) => {
 
     return (
         <>
 
             <ul className="team-list">
+
+                <h1 className="team-header">{teamName}</h1>
 
                 {playersTeam.map((player, index) => {
 
