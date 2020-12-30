@@ -4,6 +4,8 @@ const initial = {
     tooManyPlayers: false,
     playersTeam1: [],
     playersTeam2: [],
+    min: 2,
+    max: 22,
 };
 
 export default initial;

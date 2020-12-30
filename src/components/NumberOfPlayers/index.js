@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import NumberOfPlayers from './NumberOfPlayers';
 import { changeNumberOfPlayers } from '../../data/action';
 
-const mapStateToProps = ({ numberOfPlayers }) => ({ numberOfPlayers });
+const mapStateToProps = ({ numberOfPlayers, min, max }) => ({ numberOfPlayers, min, max });
 
 const mapDispatchToProps = dispatch => {
 
