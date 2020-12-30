@@ -42,6 +42,13 @@ const checkPlayerNumbers = state => {
 
 };
 
+const checkPlayerAndTeamNaming = (state) => {
+    return {
+      ...state,
+      playersAndTeamNamesFinished: true,
+    };
+  }
+
 const createTeams = (state) => {
     let playersArray = state.players;
 
@@ -65,6 +72,7 @@ const reducer = (state, action) => {
         case "ADD_PLAYER": return checkPlayerNumbers(addPlayer(state, action));
         case "ADD_TEAM_NAMES": return addTeamNames(state, action);
         case "CHANGE_NO_OF_PLAYERS": return checkPlayerNumbers(changeNumberOfPlayers(state, action));
+        case "FINISH_NAMING": return checkPlayerAndTeamNaming(state);
         case "CREATE_TEAMS": return createTeams(state);
         default: return state;
     }
