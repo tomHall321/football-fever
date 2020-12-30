@@ -7,7 +7,7 @@ const OnToTeamsBtn = ({ tooManyPlayers, handlePlayersFinished }) => {
         <button
             className="btn-confirms-players-teamNames"
             onClick={() => handlePlayersFinished()}
-            disabled= {false}
+            disabled={tooManyPlayers ? false : true}
         >Finished with player creation and Team Names</button>
 
     );
