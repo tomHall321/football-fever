@@ -1,5 +1,5 @@
 import { createStore, compose } from "redux";
-import reducer from "./reducer";
+import reducer from "./reducer/reducer";
 import initial from "./initial";
 
 const composeEnhancers =
