@@ -1,11 +1,13 @@
 import React from 'react';
 import Main from './components/Main';
+import ResetBtn from './components/ResetBtn'
 
 
 function App() {
   return (
     <>
-      <Main/>
+      <ResetBtn />
+      <Main />
     </>
   );
 }

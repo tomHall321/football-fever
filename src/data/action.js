@@ -42,3 +42,11 @@ export const createTeams = () => {
     };
 
 };
+
+export const reset = () => {
+
+    return {
+        type: "RESET",
+    };
+
+};
