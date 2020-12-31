@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperz{
+    display: flex;
+    flex-direction: row;
+}
+
+@font-face {
+    font-family: 'Modeseven';
+    src: url(fonts/Modeseven.ttf) format('truetype');
+}
+
+*{
+    font-family: 'Modeseven', 'Roboto', 'Ubuntu';
+}
+
+body{
+    background-color: rgba(231,183,95);;
+    margin: 0;
+}

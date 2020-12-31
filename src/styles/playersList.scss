@@ -1,0 +1,41 @@
+.players-list-container{
+    background-color: rgba(0,255,255);
+    box-shadow: 0.5rem 0.5rem  rgba(255,0,255);
+    border: 0.5rem solid #FFF;
+    color: rgba(0,0,0);
+    height: 28rem;
+    width: 20rem;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	display: block;
+	overflow: scroll;
+	scrollbar-width: none;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+scrollbar {
+    display: none;
+}
+
+.players-list-header{
+    background-color: rgba(0,255,255);
+    box-shadow: 0.5rem 0.5rem  rgba(255,0,255);
+    border: 0.5rem solid #FFF;
+    color: rgba(0,0,0);
+}
+
+.player-card{
+    background-color: rgba(0,255,255);
+    box-shadow: 0.5rem 0.5rem  rgba(255,0,255);
+    border: 0.5rem solid #FFF;
+    color: rgba(0,0,0);
+    list-style-type: none;
+}
