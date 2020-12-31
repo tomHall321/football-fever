@@ -67,7 +67,7 @@ class PlayerForm extends Component {
                 className="player-form-container"
             >
 
-                <div className="player-form-inputs">
+                <div className="player-name-inputs">
 
                     <FormField
                         label="Change Team 1 name:"
@@ -75,7 +75,7 @@ class PlayerForm extends Component {
                         type="text"
                         handleChange={this.handleTeamName1}
                         value={teamName1}
-                        containerClass={"form-field"}
+                        containerClass={"form-input"}
                     />
 
                     <FormField
@@ -84,21 +84,22 @@ class PlayerForm extends Component {
                         type="text"
                         handleChange={this.handleTeamName2}
                         value={teamName2}
-                        containerClass={"form-field"}
+                        containerClass={"form-input"}
                     />
 
                     <FormField
                         name={"player-name"}
-                        label={"Enter player name"}
+                        label={"Enter player name: "}
                         type={"text"}
                         value={playerName}
                         handleChange={this.handleName}
-                        containerClass={"form-field"}
+                        containerClass={"form-input"}
                     />
-
+                </div>
+                <div className="player-radio-inputs">
                     <FormField
                         name={"player-skill"}
-                        label={"Seen a football pitch"}
+                        label={"Skill level: 1"}
                         type={"radio"}
                         checked={playerSkill === '1'}
                         value={"1"}
@@ -108,7 +109,7 @@ class PlayerForm extends Component {
 
                     <FormField
                         name={"player-skill"}
-                        label={"Youth trials with xyz United"}
+                        label={"Skill level: 2"}
                         type={"radio"}
                         checked={playerSkill === '2'}
                         value={"2"}
@@ -118,7 +119,7 @@ class PlayerForm extends Component {
 
                     <FormField
                         name={"player-skill"}
-                        label={"Give them the ball"}
+                        label={"Skill level: 3"}
                         type={"radio"}
                         checked={playerSkill === '3'}
                         value={"3"}

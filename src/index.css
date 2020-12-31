@@ -12,7 +12,4 @@ code {
     monospace;
 }
 
-@import './styles/playerForm.css';
-@import './styles/playersList.css';
-@import './styles/numberOfPlayers.css';
 @import './styles/main.css';

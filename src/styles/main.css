@@ -1,3 +1,175 @@
+.player-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25rem;
+  text-align: center;
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  font-size: 2.5rem;
+  line-height: 4vh;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
+  width: fit-content;
+}
+.player-header:hover {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
+}
 
+.players-list-container {
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  height: 28rem;
+  width: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  display: block;
+  overflow: scroll;
+  scrollbar-width: none;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+scrollbar {
+  display: none;
+}
+
+.players-list-header {
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+}
+
+.player-card {
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  list-style-type: none;
+}
+
+.player-form-container {
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  height: 28rem;
+  display: flex;
+}
+
+.form-field {
+  align-self: center;
+  padding: 1rem;
+}
+
+.player-form-btn {
+  max-height: 4rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: center;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  background-color: #FFF;
+  border: 4px solid fuchsia;
+  width: 30rem;
+  height: 2.5rem;
+  color: black;
+  box-shadow: 10px 10px 0 0 fuchsia;
+}
+.form-input:hover {
+  background-color: fuchsia;
+  color: #FFF;
+  border: 4px solid white;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperz {
+  display: flex;
+  flex-direction: row;
+}
+
+@font-face {
+  font-family: "Modeseven";
+  src: url(fonts/Modeseven.ttf) format("truetype");
+}
+* {
+  font-family: "Modeseven", "Roboto", "Ubuntu";
+}
+
+body {
+  background-color: #e7b75f;
+  margin: 0;
+}
+
+.number-of-players-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25rem;
+  text-align: center;
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  font-size: 1rem;
+  line-height: 4vh;
+  margin-bottom: 2rem;
+  padding: 0.3rem;
+  width: 30rem;
+}
+
+.btn-confirmsteams {
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  padding: 0.3rem;
+  margin: 2rem;
+}
+.btn-confirmsteams:hover {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
+}
+
+.btn-skill-teams {
+  background-color: aqua;
+  box-shadow: 0.5rem 0.5rem fuchsia;
+  border: 0.5rem solid #FFF;
+  color: black;
+  padding: 0.3rem;
+  margin: 2rem;
+}
+.btn-skill-teams:hover {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
+}
 
 /*# sourceMappingURL=main.css.map */

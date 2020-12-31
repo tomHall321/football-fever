@@ -6,7 +6,7 @@ const PlayersList = ({ players, handleClick, tooManyPlayers }) => {
 
         <section className="players-list-container">
 
-            <h3 className="players-list-header">Playing this time...</h3>
+            <header className="players-list-header">Playing this time...</header>
 
             <ul className="players-list">
                 {/* iterating through players array, accessing name and skill properties */}

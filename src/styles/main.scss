@@ -1,1 +1,8 @@
+@import './headers.scss';
 @import './playersList.scss';
+@import './playerForm.scss';
+@import './wrappers.scss';
+@import './numberOfPlayers.scss';
+@import './buttons.scss';
+
+// sass --watch src/styles/main.scss:src/styles/main.css

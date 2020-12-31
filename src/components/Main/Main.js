@@ -1,6 +1,4 @@
 import React from 'react';
-import PlayerHeader from '../Headers/PlayerHeader';
-import TeamsHeader from '../Headers/TeamsHeader';
 import NumberOfPlayers from '../NumberOfPlayers';
 import RandomTeamsBtn from '../RandomTeamsBtn';
 import PlayerForm from '../PlayerForm';
@@ -14,18 +12,20 @@ const Main = ({ tooManyPlayers, teamGenerated }) => {
     return (
 
         !teamGenerated ?
-            <>  
-                <PlayerHeader />
+            <section className="wrapper">  
+                <div className="">
                 <NumberOfPlayers />
-                <PlayerForm />
-                <PlayersList />
                 <RandomTeamsBtn/>
                 <SkillTeamsBtn/>
-            </>
+                </div>
+                <div className="wrapperz">
+                <PlayerForm />
+                <PlayersList />
+                </div>
+            </section>
             :
             <> 
             <section className="wrapper">
-                <TeamsHeader />
                 <Team1 />
                 <Team2 />
             </section> 
