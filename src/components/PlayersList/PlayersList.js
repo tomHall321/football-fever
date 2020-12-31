@@ -17,6 +17,12 @@ const PlayersList = ({ players }) => {
                             <p className="player-name">{player.name}</p>
                             <p className="player-skill">skill: {player.skill}</p>
 
+                            <button
+                                onClick={() => handleClick(index)}
+                            >
+                                x
+                            </button>
+
                         </li>
                     )
                 })}
