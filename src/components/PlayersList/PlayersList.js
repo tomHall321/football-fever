@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlayersList = ({ players }) => {
+const PlayersList = ({ players, handleClick }) => {
 
     return (
 

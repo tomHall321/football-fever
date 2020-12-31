@@ -1,6 +1,13 @@
 import { connect } from 'react-redux';
 import PlayersList from './PlayersList';
+import { deletePlayer } from '../../data/action';
 
-const mapStateToProps = ({ players }) => ({ players });
+const mapStateToProps = ({ players, handleClick }) => ({ players, handleClick });
 
-export default connect(mapStateToProps, null)(PlayersList);
+const mapDispatchToProps = dispatch => {
+    return {
+        handleClick: (state, data) => dispatch(deletePlayer(state, data))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PlayersList);

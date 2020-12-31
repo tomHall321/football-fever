@@ -8,6 +8,14 @@ export const addPlayer = data => {
 
 };
 
+export const deletePlayer = () => {
+
+    return {
+        type: "DELETE_PLAYER",
+    };
+
+};
+
 export const addTeamNames = data => {
 
     return {
