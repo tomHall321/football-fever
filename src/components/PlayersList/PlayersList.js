@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlayersList = ({ players }) => {
+const PlayersList = ({ players, handleClick, tooManyPlayers }) => {
 
     return (
 
@@ -16,6 +16,12 @@ const PlayersList = ({ players }) => {
 
                             <p className="player-name">{player.name}</p>
                             <p className="player-skill">skill: {player.skill}</p>
+
+                            <button
+                                onClick={() => handleClick(index)}
+                            >
+                                x
+                            </button>
 
                         </li>
                     )
