@@ -34,6 +34,14 @@ export const createRandomTeams = () => {
 
 };
 
+export const createSkillTeams = () => {
+
+    return {
+        type: "CREATE_SKILL_TEAMS",
+    };
+
+};
+
 export const reset = () => {
 
     return {
