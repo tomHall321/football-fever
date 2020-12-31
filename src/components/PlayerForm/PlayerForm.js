@@ -67,7 +67,9 @@ class PlayerForm extends Component {
                 className="player-form-container"
             >
 
-                <div className="player-name-inputs">
+                <div className="team-inputs">
+
+                    <h1>Team Choices:</h1>
 
                     <FormField
                         label="Change Team 1 name:"
@@ -87,6 +89,11 @@ class PlayerForm extends Component {
                         containerClass={"form-input"}
                     />
 
+                </div>
+                <div className="player-inputs">
+
+                    <h1>Player Choices:</h1>
+
                     <FormField
                         name={"player-name"}
                         label={"Enter player name: "}
@@ -95,8 +102,7 @@ class PlayerForm extends Component {
                         handleChange={this.handleName}
                         containerClass={"form-input"}
                     />
-                </div>
-                <div className="player-radio-inputs">
+
                     <FormField
                         name={"player-skill"}
                         label={"Skill level: 1"}
@@ -127,14 +133,14 @@ class PlayerForm extends Component {
                         containerClass={"form-field"}
                     />
 
+                    <button
+                        type="submit"
+                        className="player-form-btn"
+                        disabled={tooManyPlayers ? true : false}
+                    >Add player</button>
+
+
                 </div>
-
-
-                <button
-                    type="submit"
-                    className="player-form-btn"
-                    disabled={tooManyPlayers ? true : false}
-                >Add player</button>
 
             </form>
         );
