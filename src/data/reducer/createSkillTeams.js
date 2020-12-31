@@ -1,17 +1,17 @@
 const createSkillTeams = state => {
+
     let playersArray = state.players;
 
-    const shuffle = (playersArray) => playersArray.sort(() => 0.5 - Math.random());
+    let arrangeBySkill = (players) => {
+        return playersArray.sort((a, b) => a.skill - b.skill);
+    }
 
-    let newArr = shuffle(playersArray);
-
-    let team1 = newArr.slice(0, (newArr.length / 2));
-    let team2 = newArr.slice((newArr.length / 2), (newArr.length));
+    let sortedPlayerArray = arrangeBySkill(playersArray);
 
     return {
         ...state,
-        playersTeam1: team1,
-        playersTeam2: team2,
+        playersTeam1: sortedPlayerArray,
+        playersTeam2: sortedPlayerArray,
         players: [],
         teamGenerated: true,
     };
