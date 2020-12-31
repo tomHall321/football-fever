@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PlayersList = ({ players, handleClick }) => {
+const PlayersList = ({ players, handleClick, tooManyPlayers }) => {
 
     return (
 

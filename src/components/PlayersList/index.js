@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import PlayersList from './PlayersList';
 import { deletePlayer } from '../../data/action';
 
-const mapStateToProps = ({ players, handleClick }) => ({ players, handleClick });
+const mapStateToProps = ({ players, tooManyPlayers }) => ({ players, tooManyPlayers });
 
 const mapDispatchToProps = dispatch => {
     return {

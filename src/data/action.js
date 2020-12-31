@@ -8,12 +8,11 @@ export const addPlayer = data => {
 
 };
 
-export const deletePlayer = () => {
-
+export const deletePlayer = data => {
     return {
         type: "DELETE_PLAYER",
-    };
-
+        index: data,
+    }
 };
 
 export const addTeamNames = data => {
