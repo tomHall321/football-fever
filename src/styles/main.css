@@ -2,17 +2,17 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 25rem;
+  margin-left: 28rem;
   text-align: center;
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
   border: 0.5rem solid #FFF;
-  color: black;
-  font-size: 2.5rem;
-  line-height: 4vh;
+  color: white;
+  font-size: 4.5rem;
   margin-bottom: 2rem;
   padding: 0.3rem;
-  width: fit-content;
+  width: 50rem;
+  height: 10rem;
 }
 .player-header:hover {
   background-color: fuchsia;
@@ -22,22 +22,21 @@
 }
 
 .players-list-container {
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
-  color: black;
-  height: 28rem;
-  width: 20rem;
-  margin-right: auto;
-  margin-left: auto;
-  display: flex;
+  color: white;
+  height: 33rem;
+  width: 29rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
   justify-content: center;
   align-items: center;
   font-size: 1rem;
   display: block;
   overflow: scroll;
   scrollbar-width: none;
-  position: relative;
+  font-size: 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -49,57 +48,83 @@ scrollbar {
 }
 
 .players-list-header {
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
-  border: 0.5rem solid #FFF;
-  color: black;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
 }
 
 .player-card {
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #44318D;
+  font-size: 1rem;
+  box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
-  color: black;
+  color: white;
   list-style-type: none;
+  width: 15rem;
+  text-align: center;
+  margin: 1rem;
+  margin-left: 3rem;
+}
+
+.player-delete-btn {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.2rem;
+  background-color: #E98074;
 }
 
 .player-form-container {
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
   border: 0.5rem solid #FFF;
-  color: black;
-  height: 28rem;
+  color: white;
+  height: 40rem;
+  width: 40rem;
   display: flex;
-}
-
-.form-field {
-  align-self: center;
-  padding: 1rem;
+  margin-left: 5rem;
+  flex-direction: column;
+  font-size: 1.5rem;
 }
 
 .player-form-btn {
-  max-height: 4rem;
+  height: 4rem;
+  width: 6rem;
+  padding: 0.8rem;
+  margin: 1rem;
+  margin-left: 17rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
+}
+.player-form-btn:hover:not([disabled]) {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
 }
 
 .form-input {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: center;
-  font-size: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-  background-color: #FFF;
-  border: 4px solid fuchsia;
   width: 30rem;
-  height: 2.5rem;
-  color: black;
-  box-shadow: 10px 10px 0 0 fuchsia;
+  height: 3.5rem;
+  color: white;
+  margin-left: 5rem;
 }
-.form-input:hover {
-  background-color: fuchsia;
-  color: #FFF;
-  border: 4px solid white;
+.form-input input {
+  margin: 0.2rem;
+  padding: 0.5rem;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
+  font-size: 1rem;
+}
+
+.team-inputs {
+  text-align: center;
+}
+
+.skill-inputs {
+  text-align: center;
 }
 
 .wrapper {
@@ -121,36 +146,58 @@ scrollbar {
 }
 
 body {
-  background-color: #e7b75f;
+  background-color: #44318D;
   margin: 0;
 }
 
 .number-of-players-wrapper {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 25rem;
+  flex-direction: row;
+  margin-left: 5rem;
   text-align: center;
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
   border: 0.5rem solid #FFF;
-  color: black;
-  font-size: 1rem;
-  line-height: 4vh;
+  color: white;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
   padding: 0.3rem;
-  width: 30rem;
+  width: 28rem;
+}
+.number-of-players-wrapper p {
+  margin-left: 1rem;
+  width: 19rem;
+}
+.number-of-players-wrapper .player-remove-btn {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0.2rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  background-color: #E98074;
+}
+.number-of-players-wrapper .player-add-btn {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0.2rem;
+  margin-top: 1rem;
+  background-color: #7db99b;
 }
 
 .btn-confirmsteams {
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
-  color: black;
+  color: white;
   padding: 0.3rem;
   margin: 2rem;
+  height: 10rem;
+  font-size: 1.2rem;
 }
-.btn-confirmsteams:hover {
+.btn-confirmsteams[disabled] {
+  opacity: 0.6;
+}
+.btn-confirmsteams:hover:not([disabled]) {
   background-color: fuchsia;
   color: black;
   box-shadow: 0.5rem 0.5rem 0 0 aqua;
@@ -158,17 +205,44 @@ body {
 }
 
 .btn-skill-teams {
-  background-color: aqua;
-  box-shadow: 0.5rem 0.5rem fuchsia;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
-  color: black;
+  color: white;
   padding: 0.3rem;
   margin: 2rem;
+  height: 10rem;
+  font-size: 1.2rem;
 }
-.btn-skill-teams:hover {
+.btn-skill-teams[disabled] {
+  opacity: 0.6;
+}
+.btn-skill-teams:hover:not([disabled]) {
   background-color: fuchsia;
   color: black;
   box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
+}
+
+.team-header {
+  text-align: center;
+  background-color: #D83F87;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
+  border: 0.5rem solid #FFF;
+  color: white;
+  font-size: 2rem;
+  width: 50rem;
+}
+
+.team-card {
+  width: 50rem;
+  background-color: #D83F87;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.team-list {
+  background-color: #D83F87;
   border: 0.5rem solid #FFF;
 }
 

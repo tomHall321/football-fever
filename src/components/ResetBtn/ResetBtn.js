@@ -6,7 +6,7 @@ const ResetBtn = ({ handleClick }) => {
         <button
             onClick={handleClick}
             className="btn-reset"
-        >Reset</button>
+        >Reset App</button>
     );
 
 };

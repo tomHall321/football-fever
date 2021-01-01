@@ -13,13 +13,13 @@ const TeamList = ({ playersTeam, teamName }) => {
 
                     return (
                         <li
-                            className="player-card"
+                            className="team-card"
                             key={index}
                         >
 
                             <p className="name-card">{player.name}</p>
 
-                            <p className="skill-card">skill: {player.skill}</p>
+                            <p className="skill-card">Skill: {player.skill}</p>
 
                         </li>
                     )

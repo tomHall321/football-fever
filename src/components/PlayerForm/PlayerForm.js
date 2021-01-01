@@ -9,9 +9,9 @@ class PlayerForm extends Component {
         //tracking inputs into local state
         this.state = {
             playerName: "",
-            playerSkill: "",
-            teamName1: "Home Team",
-            teamName2: "Away Team",
+            playerSkill: 0,
+            teamName1: "",
+            teamName2: "",
         };
 
         this.handleName = this.handleName.bind(this);
@@ -72,7 +72,7 @@ class PlayerForm extends Component {
                     <h1>Team Choices:</h1>
 
                     <FormField
-                        label="Change Team 1 name:"
+                        label="Choose Team 1's name:"
                         name="team-name"
                         type="text"
                         handleChange={this.handleTeamName1}
@@ -81,7 +81,7 @@ class PlayerForm extends Component {
                     />
 
                     <FormField
-                        label="Change Team 2 name:"
+                        label="Choose Team 2's name:"
                         name="team-name"
                         type="text"
                         handleChange={this.handleTeamName2}
@@ -89,19 +89,20 @@ class PlayerForm extends Component {
                         containerClass={"form-input"}
                     />
 
-                </div>
-                <div className="player-inputs">
-
                     <h1>Player Choices:</h1>
 
                     <FormField
                         name={"player-name"}
-                        label={"Enter player name: "}
+                        label={"Choose a player name: "}
                         type={"text"}
                         value={playerName}
                         handleChange={this.handleName}
                         containerClass={"form-input"}
                     />
+
+                </div>
+
+                <div className="skill-inputs">
 
                     <FormField
                         name={"player-skill"}
@@ -132,15 +133,12 @@ class PlayerForm extends Component {
                         handleChange={this.handleSkill}
                         containerClass={"form-field"}
                     />
-
-                    <button
-                        type="submit"
-                        className="player-form-btn"
-                        disabled={tooManyPlayers ? true : false}
-                    >Add player</button>
-
-
                 </div>
+                <button
+                    type="submit"
+                    className="player-form-btn"
+                    disabled={tooManyPlayers ? true : false}
+                >Add player</button>
 
             </form>
         );
