@@ -16,6 +16,9 @@
 *{
     font-family: 'Modeseven', 'Roboto', 'Ubuntu';
 }
+html { 
+    font-size: 100%; 
+}
 
 body{
     background-color: #44318D;
@@ -29,6 +32,9 @@ body{
     .wrapperz{
         display: flex;
         flex-direction: column;
+    }
+    html { 
+        font-size: 50%; 
     }
 
 }

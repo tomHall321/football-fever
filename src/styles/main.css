@@ -24,9 +24,9 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   .player-header {
-    font-size: 2rem;
     width: 100%;
-    margin-left: 25%;
+    margin-top: 5%;
+    margin-left: 2%;
   }
 }
 .players-list-container {
@@ -35,7 +35,7 @@
   border: 0.5rem solid #FFF;
   color: white;
   height: 32rem;
-  width: 29rem;
+  width: 90%;
   margin-right: 5rem;
   margin-left: 5rem;
   justify-content: center;
@@ -137,7 +137,8 @@ scrollbar {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   .player-form-container {
-    width: 110%;
+    width: 100%;
+    margin-left: 2%;
   }
 }
 .wrapper {
@@ -158,6 +159,10 @@ scrollbar {
   font-family: "Modeseven", "Roboto", "Ubuntu";
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   background-color: #44318D;
   margin: 0;
@@ -167,6 +172,10 @@ body {
   .wrapperz {
     display: flex;
     flex-direction: column;
+  }
+
+  html {
+    font-size: 50%;
   }
 }
 .number-of-players-wrapper {
@@ -181,7 +190,7 @@ body {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   padding: 0.3rem;
-  width: 28rem;
+  width: 90%;
 }
 .number-of-players-wrapper p {
   margin-left: 1rem;
@@ -209,6 +218,7 @@ body {
   border: 0.5rem solid #FFF;
   color: white;
   padding: 0.3rem;
+  margin-left: 7%;
   margin-top: 10%;
   height: 10rem;
   font-size: 1.2rem;
@@ -260,6 +270,11 @@ body {
   border: 0.5rem solid #FFF;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .btn-reset {
+    position: relative;
+  }
+}
 .team-header {
   text-align: center;
   color: white;
