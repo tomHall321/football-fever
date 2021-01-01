@@ -2,16 +2,17 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 28rem;
+  margin-left: 30%;
+  margin-top: 1%;
+  margin-bottom: 2rem;
   text-align: center;
   background-color: #D83F87;
   box-shadow: 0.5rem 0.5rem #2A1B3D;
   border: 0.5rem solid #FFF;
   color: white;
   font-size: 4.5rem;
-  margin-bottom: 2rem;
   padding: 0.3rem;
-  width: 50rem;
+  width: 40%;
   height: 10rem;
 }
 .player-header:hover {
@@ -21,12 +22,19 @@
   border: 0.5rem solid #FFF;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .player-header {
+    font-size: 2rem;
+    width: 100%;
+    margin-left: 25%;
+  }
+}
 .players-list-container {
   background-color: #D83F87;
   box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
   color: white;
-  height: 33rem;
+  height: 32rem;
   width: 29rem;
   margin-right: 5rem;
   margin-left: 5rem;
@@ -79,7 +87,7 @@ scrollbar {
   border: 0.5rem solid #FFF;
   color: white;
   height: 40rem;
-  width: 40rem;
+  width: 35%;
   display: flex;
   margin-left: 5rem;
   flex-direction: column;
@@ -107,10 +115,10 @@ scrollbar {
   flex-direction: column;
   margin-bottom: 2rem;
   text-align: center;
-  width: 30rem;
+  width: 80%;
   height: 3.5rem;
   color: white;
-  margin-left: 5rem;
+  margin-left: 10%;
 }
 .form-input input {
   margin: 0.2rem;
@@ -127,6 +135,11 @@ scrollbar {
   text-align: center;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .player-form-container {
+    width: 110%;
+  }
+}
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -150,6 +163,12 @@ body {
   margin: 0;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .wrapperz {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .number-of-players-wrapper {
   display: flex;
   flex-direction: row;
@@ -190,7 +209,7 @@ body {
   border: 0.5rem solid #FFF;
   color: white;
   padding: 0.3rem;
-  margin: 2rem;
+  margin-top: 10%;
   height: 10rem;
   font-size: 1.2rem;
 }
@@ -210,7 +229,8 @@ body {
   border: 0.5rem solid #FFF;
   color: white;
   padding: 0.3rem;
-  margin: 2rem;
+  margin-top: 10%;
+  margin-left: 1%;
   height: 10rem;
   font-size: 1.2rem;
 }
@@ -218,6 +238,22 @@ body {
   opacity: 0.6;
 }
 .btn-skill-teams:hover:not([disabled]) {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
+}
+
+.btn-reset {
+  height: 4rem;
+  width: 6rem;
+  padding: 0.8rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
+  position: absolute;
+  margin-left: 1%;
+}
+.btn-reset:hover {
   background-color: fuchsia;
   color: black;
   box-shadow: 0.5rem 0.5rem 0 0 aqua;
