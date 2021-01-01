@@ -25,7 +25,7 @@ const Main = ({ tooManyPlayers, teamGenerated }) => {
             </section>
             :
             <> 
-            <section className="wrapper">
+            <section className="wrapperz">
                 <Team1 />
                 <Team2 />
             </section> 

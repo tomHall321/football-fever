@@ -1,4 +1,7 @@
 .btn-confirmsteams{
+    &[disabled] {
+        opacity: 0.6;
+    }
     background-color:  #D83F87;
     box-shadow: 0.5rem 0.5rem  black;
     border: 0.5rem solid #FFF;
@@ -17,6 +20,9 @@
 }
 
 .btn-skill-teams{
+    &[disabled] {
+        opacity: 0.6;
+    }
     background-color:  #D83F87;
     box-shadow: 0.5rem 0.5rem  black;
     border: 0.5rem solid #FFF;

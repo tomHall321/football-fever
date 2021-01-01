@@ -26,7 +26,7 @@
   box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
   color: white;
-  height: 28rem;
+  height: 33rem;
   width: 25rem;
   margin-right: 5rem;
   margin-left: 5rem;
@@ -154,6 +154,9 @@ body {
   margin: 2rem;
   height: 10rem;
 }
+.btn-confirmsteams[disabled] {
+  opacity: 0.6;
+}
 .btn-confirmsteams:hover {
   background-color: fuchsia;
   color: black;
@@ -169,6 +172,9 @@ body {
   padding: 0.3rem;
   margin: 2rem;
   height: 10rem;
+}
+.btn-skill-teams[disabled] {
+  opacity: 0.6;
 }
 .btn-skill-teams:hover {
   background-color: fuchsia;
