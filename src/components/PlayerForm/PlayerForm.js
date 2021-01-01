@@ -93,7 +93,7 @@ class PlayerForm extends Component {
 
                     <FormField
                         name={"player-name"}
-                        label={"Choose a player name: "}
+                        label={"Define player: "}
                         type={"text"}
                         value={playerName}
                         handleChange={this.handleName}
