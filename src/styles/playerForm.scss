@@ -4,7 +4,7 @@
     border: 0.5rem solid #FFF;
     color: white;
 	height: 40rem;
-	width: 40rem;
+	width: 35%;
 	display: flex;
 	margin-left: 5rem;
 	flex-direction: column;
@@ -33,10 +33,10 @@
 	flex-direction: column;
    	margin-bottom: 2rem;
    	text-align: center;
-	width: 30rem;  
+	width: 80%;  
 	height: 3.5rem;
 	color: white;
-	margin-left: 5rem;
+	margin-left: 10%;
 
 	input{
 		margin: 0.2rem;
@@ -52,4 +52,13 @@
 
 .skill-inputs{
 	text-align: center;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .player-form-container{
+		width: 110%;
+	}
 }

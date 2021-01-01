@@ -2,7 +2,7 @@
     display: flex;
 	justify-content: center;
     flex-direction: column;
-    margin-left: 28rem;
+    margin-left: 25%;
     text-align: center;
 	background-color: #D83F87;
     box-shadow: 0.5rem 0.5rem #2A1B3D;
@@ -11,7 +11,7 @@
 	font-size: 4.5rem;
    	margin-bottom: 2rem;
    	padding: 0.3rem;
-    width: 50rem;
+    width: 40%;
     height: 10rem;
 
 	&:hover {
@@ -21,4 +21,15 @@
         border: 0.5rem solid #FFF;
 	}
 
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .player-header{
+        font-size: 2rem;
+        width: 100%;
+        margin-left: 25%;
+	}
 }
