@@ -2,14 +2,15 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 25%;
+  margin-left: 30%;
+  margin-top: 1%;
+  margin-bottom: 2rem;
   text-align: center;
   background-color: #D83F87;
   box-shadow: 0.5rem 0.5rem #2A1B3D;
   border: 0.5rem solid #FFF;
   color: white;
   font-size: 4.5rem;
-  margin-bottom: 2rem;
   padding: 0.3rem;
   width: 40%;
   height: 10rem;
@@ -208,7 +209,7 @@ body {
   border: 0.5rem solid #FFF;
   color: white;
   padding: 0.3rem;
-  margin: 2rem;
+  margin-top: 10%;
   height: 10rem;
   font-size: 1.2rem;
 }
@@ -228,7 +229,8 @@ body {
   border: 0.5rem solid #FFF;
   color: white;
   padding: 0.3rem;
-  margin: 2rem;
+  margin-top: 10%;
+  margin-left: 1%;
   height: 10rem;
   font-size: 1.2rem;
 }
@@ -236,6 +238,22 @@ body {
   opacity: 0.6;
 }
 .btn-skill-teams:hover:not([disabled]) {
+  background-color: fuchsia;
+  color: black;
+  box-shadow: 0.5rem 0.5rem 0 0 aqua;
+  border: 0.5rem solid #FFF;
+}
+
+.btn-reset {
+  height: 4rem;
+  width: 6rem;
+  padding: 0.8rem;
+  background-color: white;
+  box-shadow: 0.5rem 0.5rem #2A1B3D;
+  position: absolute;
+  margin-left: 1%;
+}
+.btn-reset:hover {
   background-color: fuchsia;
   color: black;
   box-shadow: 0.5rem 0.5rem 0 0 aqua;
