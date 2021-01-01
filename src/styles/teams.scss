@@ -1,21 +1,57 @@
 .team-header{
     text-align: center;
-	background-color: #D83F87;
-    box-shadow: 0.5rem 0.5rem #2A1B3D;
-    border: 0.5rem solid #FFF;
 	color: white;
 	font-size: 2rem;
-    width: 50rem;
-}
-
-.team-card{
-    width: 50rem;
-    background-color: #D83F87;
-    display: block;
-    font-size: 1.5rem;
+    width: 90%;
+    height: 10%;
+    margin: 1%;
+    margin-top: 3%;
+    text-align: center;
 }
 
 .team-list{
     background-color: #D83F87;
+    box-shadow: 0.5rem 0.5rem black;
     border: 0.5rem solid #FFF;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: 50%;
+    min-height: 20rem;
+    height: fit-content;
+}
+
+.team-card{
+    width: 80%;
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 0.5rem 0.5rem black;
+    border: 0.5rem solid #FFF;
+    display: flex;
+    margin: 3%;
+    padding: 0.3rem;
+    background-color: #44318D;
+    text-align: center;
+    p{
+		margin-left: 10%;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .team-header{
+        font-size: 1rem;
+    }
+    .team-card{
+        width: 80%;
+        font-size: 1rem;
+        margin: 0%;
+        margin-left: 0%;
+        padding: 0%;
+        p{
+            margin-left: 0%;
+        }
+    }
 }
