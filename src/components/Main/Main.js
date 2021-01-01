@@ -13,12 +13,15 @@ const Main = ({ tooManyPlayers, teamGenerated }) => {
 
         !teamGenerated ?
             <section className="wrapper">  
-                <div className="">
+                {/* <div className="">
                 <NumberOfPlayers />
-                </div>
+                </div> */}
                 <div className="wrapperz">
                 <PlayerForm />
+                <div className="wrapper">
+                <NumberOfPlayers />
                 <PlayersList />
+                </div>
                 <RandomTeamsBtn/>
                 <SkillTeamsBtn/>
                 </div>

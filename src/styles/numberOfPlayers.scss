@@ -1,25 +1,38 @@
 .number-of-players-wrapper{
     display: flex;
-	justify-content: center;
-    flex-direction: column;
-    margin-left: 25rem;
+	flex-direction: row;
+    margin-left: 5rem;
     text-align: center;
 	background-color: #D83F87;
     box-shadow: 0.5rem 0.5rem  #2A1B3D;
     border: 0.5rem solid #FFF;
 	color: white;
-	font-size: 1rem;
-  	line-height: 4vh;
+	font-size: 1.5rem;
    	margin-bottom: 2rem;
    	padding: 0.3rem;
-  	width: 30rem;
+	width: 28rem;
 
-}
+	p{
+		margin-left: 1rem;
+		width: 19rem;
+	}
 
-.player-remove-btn{
-
-}
-
-.player-add-btn{
+	  .player-remove-btn{
+		max-width: 2rem;
+		max-height: 2rem;
+		margin: 0.2rem;
+		margin-left: 1rem;
+		margin-top: 1rem;
+		background-color: #E98074;
+		
+	}
 	
+	.player-add-btn{
+		max-width: 2rem;
+		max-height: 2rem;
+		margin: 0.2rem;
+		margin-top: 1rem;
+		background-color: #7db99b;
+
+	}
 }

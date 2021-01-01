@@ -4,17 +4,15 @@
     border: 0.5rem solid #FFF;
     color: white;
     height: 33rem;
-    width: 25rem;
+    width: 29rem;
 	margin-right: 5rem;
 	margin-left: 5rem;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 1rem;
 	display: block;
 	overflow: scroll;
 	scrollbar-width: none;
-    position: relative;
     font-size: 2rem;
 }
 
@@ -26,12 +24,11 @@ scrollbar {
     display: none;
 }
 
-// .players-list-header{
-//     background-color: #F76C6C;
-//     box-shadow: 0.5rem 0.5rem  rgba(255,0,255);
-//     border: 0.5rem solid #FFF;
-//     color: rgba(0,0,0);
-// }
+.players-list-header{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem;
+}
 
 .player-card{
     background-color: #44318D;
@@ -43,5 +40,12 @@ scrollbar {
     width: 15rem;
     text-align: center;
     margin: 1rem;
+    margin-left: 3rem;
 }
 
+.player-delete-btn{
+    width: 2rem;
+	height: 2rem;
+	margin: 0.2rem;
+	background-color: #E98074;
+}

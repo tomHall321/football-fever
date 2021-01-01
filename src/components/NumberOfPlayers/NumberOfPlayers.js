@@ -6,18 +6,18 @@ const NumberOfPlayers = ({ numberOfPlayers, handleDecrement, handleIncrement, mi
         <div className="number-of-players-wrapper">
 
             <p>
-                Choose how many players: currently {numberOfPlayers}
+                How many players? {numberOfPlayers}
             </p>
 
             <button
                 onClick={handleDecrement}
-                className="player-add-btn"
+                className="player-remove-btn"
                 disabled={ numberOfPlayers === min || tooManyPlayers ? true : false }
             >-</button>
 
             <button
                 onClick={handleIncrement}
-                className="player-remove-btn"
+                className="player-add-btn"
                 disabled={ numberOfPlayers === max || tooManyPlayers ? true : false}
             >+</button>
 
