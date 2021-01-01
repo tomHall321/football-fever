@@ -9,9 +9,9 @@ class PlayerForm extends Component {
         //tracking inputs into local state
         this.state = {
             playerName: "",
-            playerSkill: "",
-            teamName1: "Home Team",
-            teamName2: "Away Team",
+            playerSkill: 0,
+            teamName1: "",
+            teamName2: "",
         };
 
         this.handleName = this.handleName.bind(this);

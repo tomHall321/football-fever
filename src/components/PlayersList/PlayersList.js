@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect, useRef } from "react";
 
 const PlayersList = ({ players, handleClick, tooManyPlayers }) => {
+
+    const divRef = useRef(null);
+
+    useEffect(() => {
+        divRef.current.scrollIntoView({ behavior: 'smooth' });
+    });
 
     return (
 
@@ -28,6 +34,8 @@ const PlayersList = ({ players, handleClick, tooManyPlayers }) => {
                 })}
             </ul>
 
+            <div ref={divRef} />
+            
         </section>
     );
 };

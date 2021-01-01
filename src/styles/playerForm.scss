@@ -1,39 +1,43 @@
 .player-form-container{
-    background-color: rgba(0,255,255);
-    box-shadow: 0.5rem 0.5rem  rgba(255,0,255);
+    background-color: #D83F87;
+    box-shadow: 0.5rem 0.5rem #2A1B3D;
     border: 0.5rem solid #FFF;
-    color: rgba(0,0,0);
-    height: 28rem;
-    display: flex;
+    color: white;
+	height: 33rem;
+	width: 40rem;
+	display: flex;
+	margin-left: 5rem;
+	flex-direction: column;
 }
 
 .form-field{
 	align-self: center;
-	padding: 1rem;
 }
 
 .player-form-btn{
    max-height: 4rem;
+   padding: 0.5rem;
+   margin: 1rem;
 }
 
 .form-input{
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	align-self: center;
 	font-size: 1rem;
    	margin-bottom: 2rem;
    	text-align: center;
 	background-color: #FFF;
-	border: 4px solid rgba(255,0,255);
+	border: 0.1rem solid black;
   	width: 30rem;
-	height: 2.5rem;
+	height: 3.5rem;
 	color: black;
-	box-shadow: 10px 10px 0 0 rgba(255,0,255);
+	margin-left: 5rem;
+}
 
-	&:hover {
-	background-color: rgba(255,0,255);
-	color: #FFF;
-	border: 4px solid white;
-	}
+.team-inputs{
+	text-align: center;
+}
+
+.player-inputs{
+	text-align: center;
 }
