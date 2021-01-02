@@ -1,12 +1,12 @@
 import React from "react";
 
-const AboutPageBtn = ({ handleClick }) => {
+const AboutPageBtn = ({ handleClick, aboutPage }) => {
 
      return (
         <button
             onClick={ handleClick }
             className="btn-reset"
-        >Toogle about page</button>
+        > {!aboutPage ? "About Page" : "Back to App" }</button>
     );
 
 };

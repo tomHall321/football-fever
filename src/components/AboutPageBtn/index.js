@@ -2,6 +2,8 @@ import { connect } from "react-redux";
 import AboutPageBtn from "./AboutPageBtn";
 import { showAboutPage } from '../../data/action';
 
+const mapStateToProps = ({ aboutPage }) => ({ aboutPage });
+
 const mapDispatchToProps = dispatch => {
 
     return {
@@ -12,4 +14,4 @@ const mapDispatchToProps = dispatch => {
     
 };
 
-export default connect(null, mapDispatchToProps)(AboutPageBtn);
+export default connect(mapStateToProps, mapDispatchToProps)(AboutPageBtn);
