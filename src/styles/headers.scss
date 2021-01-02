@@ -3,17 +3,16 @@
 	justify-content: center;
     flex-direction: column;
     margin-left: 30%;
-    margin-top: 1%;
     margin-bottom: 2rem;
     text-align: center;
 	background-color: #D83F87;
     box-shadow: 0.5rem 0.5rem #2A1B3D;
     border: 0.5rem solid #FFF;
 	color: white;
-	font-size: 4.5rem;
+	font-size: 3.5rem;
    	padding: 0.3rem;
     width: 40%;
-    height: 10rem;
+    height: 7rem;
 
 	&:hover {
         background-color: rgba(255,0,255);
@@ -41,5 +40,6 @@ and (max-width:1420px) {
         width: 90%;
         margin-top: 5%;
         margin-left: 2%;
+        font-size: 3rem;
 	}
 }

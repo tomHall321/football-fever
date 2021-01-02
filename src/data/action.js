@@ -49,6 +49,14 @@ export const createSkillTeams = () => {
 
 };
 
+export const showAboutPage = () => {
+
+    return {
+        type: "SHOW_ABOUT_PAGE",
+    };
+
+};
+
 export const reset = () => {
 
     return {
