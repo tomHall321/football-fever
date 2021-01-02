@@ -8,7 +8,7 @@ const SkillTeamsBtn = ({ handleSkillTeams, tooManyPlayers }) => {
             className="btn-skill-teams"
             onClick={() => handleSkillTeams()}
             disabled={tooManyPlayers ? false : true}
-        >Draw skill teams</button>
+        >Draw fair teams</button>
 
     );
 };
