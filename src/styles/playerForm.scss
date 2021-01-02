@@ -65,3 +65,13 @@ and (max-device-width: 640px)
 		margin-left: 3%;
 	}
 }
+
+@media only screen  
+and (max-width:1420px) {   	
+
+    .player-form-container{
+		width: 90%;
+		margin-left: 3%;
+	}
+   
+}

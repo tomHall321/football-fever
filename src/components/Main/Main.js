@@ -12,10 +12,10 @@ const Main = ({ tooManyPlayers, teamGenerated }) => {
     return (
 
         !teamGenerated ?
-            <section className="wrapper">
-                <div className="wrapperz">
+            <section className="column-wrapper">
+                <div className="row-wrapper">
                     <PlayerForm />
-                    <div className="wrapper">
+                    <div className="column-wrapper">
                         <NumberOfPlayers />
                         <PlayersList />
                     </div>
@@ -25,7 +25,7 @@ const Main = ({ tooManyPlayers, teamGenerated }) => {
             </section>
             :
             <>
-                <section className="wrapperz">
+                <section className="row-wrapper">
                     <Team1 />
                     <Team2 />
                 </section>

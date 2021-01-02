@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Modeseven';
+    src: url(fonts/Modeseven.ttf) format('truetype');
+}
+
+*{
+    font-family: 'Modeseven', 'Roboto', 'Ubuntu';
+}
+
+html { 
+    font-size: 100%; 
+}
+
+body{
+    background-color: #44318D;
+    margin: 0;
+}
+
+
+.column-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.row-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 640px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    .row-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    html { 
+        font-size: 50%; 
+    }
+
+}
+
+@media only screen  
+    and (max-width:1420px) {   	
+    .row-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}

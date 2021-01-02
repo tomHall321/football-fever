@@ -45,8 +45,26 @@
         font-size: 1.5rem;
     }
     .team-card{
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin: 0%;
+        margin-left: 0%;
+        padding: 0%;
+    }
+}
+
+@media only screen  
+and (max-width:1420px) {   
+    .team-list{
+        width: 90%;
+        margin-left: 2%;
+    }
+    .team-header{
+        font-size: 1.5rem;
+    }
+    .team-card{
+        width: 95%;
+        font-size: 1.25rem;
+        margin: 2%;
         margin-left: 0%;
         padding: 0%;
     }

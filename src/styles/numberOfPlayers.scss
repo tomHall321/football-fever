@@ -17,24 +17,25 @@
 		width: 19rem;
 	}
 
-	  .player-remove-btn{
-		max-width: 2rem;
-		max-height: 2rem;
-		margin: 0.2rem;
-		margin-left: 1rem;
-		margin-top: 1rem;
-		background-color: #E98074;
-		
-	}
-	
-	.player-add-btn{
-		max-width: 2rem;
-		max-height: 2rem;
-		margin: 0.2rem;
-		margin-top: 1rem;
-		background-color: #7db99b;
+}
 
-	}
+.player-remove-btn{
+	max-width: 2rem;
+	max-height: 2rem;
+	margin: 0.2rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	background-color: #E98074;
+	
+}
+
+.player-add-btn{
+	max-width: 2rem;
+	max-height: 2rem;
+	margin: 0.2rem;
+	margin-top: 1rem;
+	background-color: #7db99b;
+
 }
 
 @media only screen 
@@ -42,6 +43,15 @@
   and (max-device-width: 640px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .number-of-players-wrapper{
+		width: 88%;
+		margin-top: 3%;
+		margin-left: 3%;
+	}
+}
+
+@media only screen  
+and (max-width:1420px) { 
+	.number-of-players-wrapper{
 		width: 88%;
 		margin-top: 3%;
 		margin-left: 3%;
