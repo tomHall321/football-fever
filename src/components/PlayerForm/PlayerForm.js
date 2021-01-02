@@ -103,10 +103,10 @@ class PlayerForm extends Component {
                 </div>
 
                 <div className="skill-inputs">
-
+                    <p>Skill level:</p>
                     <FormField
                         name={"player-skill"}
-                        label={"Skill level: 1"}
+                        label={"1"}
                         type={"radio"}
                         checked={playerSkill === '1'}
                         value={"1"}
@@ -116,7 +116,7 @@ class PlayerForm extends Component {
 
                     <FormField
                         name={"player-skill"}
-                        label={"Skill level: 2"}
+                        label={"2"}
                         type={"radio"}
                         checked={playerSkill === '2'}
                         value={"2"}
@@ -126,7 +126,7 @@ class PlayerForm extends Component {
 
                     <FormField
                         name={"player-skill"}
-                        label={"Skill level: 3"}
+                        label={"3"}
                         type={"radio"}
                         checked={playerSkill === '3'}
                         value={"3"}

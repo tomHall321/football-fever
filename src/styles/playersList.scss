@@ -3,8 +3,8 @@
     box-shadow: 0.5rem 0.5rem black;
     border: 0.5rem solid #FFF;
     color: white;
-    height: 32rem;
-    width: 90%;
+    height: 33rem;
+    width: 93%;
 	margin-right: 5rem;
 	margin-left: 5rem;
 	justify-content: center;
@@ -40,7 +40,7 @@ scrollbar {
     width: 15rem;
     text-align: center;
     margin: 1rem;
-    margin-left: 3rem;
+    margin-left: 14%;
 }
 
 .player-delete-btn{
@@ -48,4 +48,15 @@ scrollbar {
 	height: 2rem;
 	margin: 0.2rem;
 	background-color: #E98074;
+}
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .players-list-container{
+		width: 88%;
+		margin-left: 3%;
+	}
 }
