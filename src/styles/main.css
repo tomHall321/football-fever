@@ -24,7 +24,7 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   .player-header {
-    width: 100%;
+    width: 90%;
     margin-top: 5%;
     margin-left: 2%;
   }
@@ -34,8 +34,8 @@
   box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
   color: white;
-  height: 32rem;
-  width: 90%;
+  height: 33rem;
+  width: 93%;
   margin-right: 5rem;
   margin-left: 5rem;
   justify-content: center;
@@ -71,7 +71,7 @@ scrollbar {
   width: 15rem;
   text-align: center;
   margin: 1rem;
-  margin-left: 3rem;
+  margin-left: 14%;
 }
 
 .player-delete-btn {
@@ -81,12 +81,18 @@ scrollbar {
   background-color: #E98074;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .players-list-container {
+    width: 88%;
+    margin-left: 3%;
+  }
+}
 .player-form-container {
   background-color: #D83F87;
   box-shadow: 0.5rem 0.5rem #2A1B3D;
   border: 0.5rem solid #FFF;
   color: white;
-  height: 40rem;
+  height: 41rem;
   width: 35%;
   display: flex;
   margin-left: 5rem;
@@ -96,10 +102,9 @@ scrollbar {
 
 .player-form-btn {
   height: 4rem;
-  width: 6rem;
-  padding: 0.8rem;
+  width: 25%;
   margin: 1rem;
-  margin-left: 17rem;
+  margin-left: 36%;
   background-color: white;
   box-shadow: 0.5rem 0.5rem #2A1B3D;
 }
@@ -113,7 +118,7 @@ scrollbar {
 .form-input {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  margin-bottom: 4%;
   text-align: center;
   width: 80%;
   height: 3.5rem;
@@ -133,12 +138,13 @@ scrollbar {
 
 .skill-inputs {
   text-align: center;
+  margin-top: -2%;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
   .player-form-container {
-    width: 100%;
-    margin-left: 2%;
+    width: 90%;
+    margin-left: 3%;
   }
 }
 .wrapper {
@@ -212,6 +218,13 @@ body {
   background-color: #7db99b;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .number-of-players-wrapper {
+    width: 88%;
+    margin-top: 3%;
+    margin-left: 3%;
+  }
+}
 .btn-confirmsteams {
   background-color: #D83F87;
   box-shadow: 0.5rem 0.5rem black;
@@ -274,6 +287,16 @@ body {
   .btn-reset {
     position: relative;
   }
+
+  .btn-confirmsteams {
+    margin-left: 3%;
+    width: 90%;
+  }
+
+  .btn-skill-teams {
+    margin-left: 3%;
+    width: 90%;
+  }
 }
 .team-header {
   text-align: center;
@@ -304,30 +327,27 @@ body {
   color: white;
   box-shadow: 0.5rem 0.5rem black;
   border: 0.5rem solid #FFF;
-  display: flex;
   margin: 3%;
   padding: 0.3rem;
   background-color: #44318D;
   text-align: center;
 }
-.team-card p {
-  margin-left: 10%;
-}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
+  .team-list {
+    width: 80%;
+    margin-left: 2%;
+  }
+
   .team-header {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .team-card {
-    width: 80%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin: 0%;
     margin-left: 0%;
     padding: 0%;
-  }
-  .team-card p {
-    margin-left: 0%;
   }
 }
 

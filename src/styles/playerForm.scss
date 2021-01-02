@@ -3,7 +3,7 @@
     box-shadow: 0.5rem 0.5rem #2A1B3D;
     border: 0.5rem solid #FFF;
     color: white;
-	height: 40rem;
+	height: 41rem;
 	width: 35%;
 	display: flex;
 	margin-left: 5rem;
@@ -13,10 +13,9 @@
 
 .player-form-btn{
 	height: 4rem;
-	width: 6rem;
-	padding: 0.8rem;
+	width: 25%;
 	margin: 1rem;
-	margin-left: 17rem;
+	margin-left: 36%;
 	background-color: white;
 	box-shadow: 0.5rem 0.5rem #2A1B3D;
 
@@ -31,7 +30,7 @@
 .form-input{
 	display: flex;
 	flex-direction: column;
-   	margin-bottom: 2rem;
+	margin-bottom: 4%;
    	text-align: center;
 	width: 80%;  
 	height: 3.5rem;
@@ -43,6 +42,7 @@
 		padding: 0.5rem;
 		box-shadow: 0.5rem 0.5rem #2A1B3D;
 		font-size: 1rem;
+
 	}
 }
 
@@ -52,6 +52,7 @@
 
 .skill-inputs{
 	text-align: center;
+	margin-top: -2%;
 }
 
 @media only screen 
@@ -59,7 +60,7 @@
   and (max-device-width: 640px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .player-form-container{
-		width: 100%;
-		margin-left: 2%;
+		width: 90%;
+		margin-left: 3%;
 	}
 }
