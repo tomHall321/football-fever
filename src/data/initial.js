@@ -7,6 +7,7 @@ const initial = {
     min: 2,
     max: 22,
     teamGenerated: false,
+    aboutPage: false,
 };
 
 export default initial;
