@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/football_team_selector/static/css/main.be8378bd.chunk.css",
+    "main.css": "/football_team_selector/static/css/main.484bb7c3.chunk.css",
     "main.js": "/football_team_selector/static/js/main.4c51db11.chunk.js",
     "main.js.map": "/football_team_selector/static/js/main.4c51db11.chunk.js.map",
     "runtime-main.js": "/football_team_selector/static/js/runtime-main.74c05d28.js",
@@ -8,14 +8,14 @@
     "static/js/2.fadec21b.chunk.js": "/football_team_selector/static/js/2.fadec21b.chunk.js",
     "static/js/2.fadec21b.chunk.js.map": "/football_team_selector/static/js/2.fadec21b.chunk.js.map",
     "index.html": "/football_team_selector/index.html",
-    "static/css/main.be8378bd.chunk.css.map": "/football_team_selector/static/css/main.be8378bd.chunk.css.map",
+    "static/css/main.484bb7c3.chunk.css.map": "/football_team_selector/static/css/main.484bb7c3.chunk.css.map",
     "static/js/2.fadec21b.chunk.js.LICENSE.txt": "/football_team_selector/static/js/2.fadec21b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/football_team_selector/static/media/Modeseven.8cd71d7c.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.74c05d28.js",
     "static/js/2.fadec21b.chunk.js",
-    "static/css/main.be8378bd.chunk.css",
+    "static/css/main.484bb7c3.chunk.css",
     "static/js/main.4c51db11.chunk.js"
   ]
 }
