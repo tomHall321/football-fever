@@ -60,3 +60,11 @@ scrollbar {
 		margin-left: 3%;
 	}
 }
+
+@media only screen  
+and (max-width:1420px) { 
+    .players-list-container{
+		width: 88%;
+		margin-left: 3%;
+	}
+}
