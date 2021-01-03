@@ -2,9 +2,9 @@
     &[disabled] {
         opacity: 0.6;
     }
-    background-color:  #D83F87;
+    background-color:  var(--background-box-color);
     box-shadow: 0.5rem 0.5rem  black;
-    border: 0.5rem solid #FFF;
+    border: 0.5rem solid white;
     color: white;
     padding: 0.3rem;
     margin-left: 7%;
@@ -13,10 +13,10 @@
     font-size: 1.2rem;
 
     &:hover:not([disabled]) {
-        background-color: rgba(255,0,255);
+        background-color: var(--hover-background-box-color);
         color: rgba(0,0,0);
-        box-shadow: 0.5rem 0.5rem 0 0 rgba(0,255,255);
-        border: 0.5rem solid #FFF;
+        box-shadow: 0.5rem 0.5rem 0 0 var(--hover-background-box-shadow);
+        border: 0.5rem solid white;
 	}
     
 }
@@ -25,9 +25,9 @@
     &[disabled] {
         opacity: 0.6;
     }
-    background-color:  #D83F87;
+    background-color: var(--background-box-color);
     box-shadow: 0.5rem 0.5rem  black;
-    border: 0.5rem solid #FFF;
+    border: 0.5rem solid white;
     color: white;
     padding: 0.3rem;
     margin-top: 10%;
@@ -36,10 +36,10 @@
     font-size: 1.2rem;
 
     &:hover:not([disabled]) {
-        background-color: rgba(255,0,255);
+        background-color: var(--hover-background-box-color);
         color: rgba(0,0,0);
-        box-shadow: 0.5rem 0.5rem 0 0 rgba(0,255,255);
-        border: 0.5rem solid #FFF;
+        box-shadow: 0.5rem 0.5rem 0 0 var(--hover-background-box-shadow);
+        border: 0.5rem solid white;
 	}
     
 }
@@ -52,9 +52,9 @@
     margin-left: 1%;
 
 	&:hover{
-        background-color: rgba(255,0,255);
+        background-color: var(--hover-background-box-color);
         color: rgba(0,0,0);
-        box-shadow: 0.5rem 0.5rem 0 0 rgba(0,255,255);
+        box-shadow: 0.5rem 0.5rem 0 0 var(--hover-background-box-shadow);
         border: 0.5rem solid #FFF;
     }
     
