@@ -10,7 +10,7 @@ const AboutPage = () => {
             <p>-Select team and player names, and player skill.</p>
             <p>-Set how many people are playing (from 2 to 22).</p>
             <p>-Choose whether you'd like teams to be balanced or random.</p>
-            <p>-Have a kick about.</p>
+            <p>-View your teams.</p>
             <p>-Do it all over again!</p>
         </section>
     );
