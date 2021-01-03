@@ -1,3 +1,11 @@
+:root {
+    --background-box-color: #D83F87;
+    --box-shadow: #2A1B3D;
+    --hover-background-box-color: rgba(255,0,255);
+    --hover-background-box-shadow: rgba(0,255,255);
+    --player-card: #44318D;
+}
+
 @font-face {
     font-family: 'Modeseven';
     src: url(fonts/Modeseven.ttf) format('truetype');

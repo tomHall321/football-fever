@@ -1,7 +1,7 @@
 .players-list-container{
-    background-color: #D83F87;
+    background-color: var(--background-box-color);
     box-shadow: 0.5rem 0.5rem black;
-    border: 0.5rem solid #FFF;
+    border: 0.5rem solid white;
     color: white;
     height: 32.5rem;
     width: 93%;
@@ -31,10 +31,10 @@ scrollbar {
 }
 
 .player-card{
-    background-color: #44318D;
+    background-color: var(--player-card);
     font-size: 1rem;
     box-shadow: 0.5rem 0.5rem black;
-    border: 0.5rem solid #FFF;
+    border: 0.5rem solid white;
     color: white;
     list-style-type: none;
     width: 15rem;
