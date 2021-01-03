@@ -49,7 +49,7 @@ In addition to this I set out a list of features I wanted to achieve:
 ## Technical decisions:
 - I decided to use React to build the components and Redux to handle state management.
 - Conditional rendering instead of specifying routes with React-router.
-- If time allows, deploy a backend built using Laravel.
+- If time allows, deploy a back end built using Laravel.
 - Git branch naming convention to focus my work (data/, logic/, components/, styling/).
 
 ## Testing:
@@ -89,7 +89,7 @@ I created simple wireframes for each page of the app:
 
 ## Lessons learnt:
 - I should have created Unit tests while writing the relevant functions, I tested them using the command line but it would be better to have easily reusable tests.
-- I would have planned the structure of my sass more carefully, I thought immediately styling css classnames would help, however this approach caused real problems when making sure the app was responsive.
+- I would have planned the structure of my SASS more carefully, I thought immediately styling css classnames would help, however this approach caused real problems when making sure the app was responsive.
 - To avoid this in future I'd use BEM (the Block, Element, Modifier methodology) and think about universal styling from the offset.
 - If I'd created a simple back-end at the beginning of the project there would have been more chance of it being integrated with the React front-end.
 
