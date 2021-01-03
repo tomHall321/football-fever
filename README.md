@@ -36,26 +36,16 @@ As per the brief, the MVP was to build an app that could take 10 names and rando
  
 In addition to this I set out a list of features I wanted to achieve:
 
-- Specify number of players (minimum 2, maximum 22)
-- Sort the teams based on player skill level
-- Set team names
-- The team list should include player name and player skill
-- Ensure some degree of validation exists (blank player or team names should not be possible)
-- An about page to help the user understand the purpose of the application
-- The app should persist for the user, and also have a reset function
-- Build a back end using Laravel to track teams and players
-
-# Styling
-
-- Bold colour scheme
-- App to be reminiscent of Teletext (find teletext style font)
-- Information to be displayed on one screen 
-- Needs to be responsive
-
-I created simple wireframes for each page of the app: 
-<img src="src/styles/images/playerPage.png" width="500px">
-<img src="src/styles/images/teamPage.png" width="500px">
-<img src="src/styles/images/aboutPage.png" width="500px">
+- Specify number of players (minimum 2, maximum 22).
+- Sort the teams based on player skill level.
+- Set team names.
+- The team list should include player name and player skill.
+- Ensure some degree of validation exists (blank player or team names should not be possible).
+- An about page to help the user understand the purpose of the application.
+- The app should persist for the user, and also have a reset function.
+- Build a back end using Laravel to track teams and players.
+- Unit tests for any complex functions.
+- Some end-to-end tests to make sure new features don't break the app.
 
 # Technical decisions
 
@@ -66,8 +56,24 @@ I created simple wireframes for each page of the app:
 
 # Testing
 
-- 
+- Redux dev tools to check that actions were happening and state was changing as expected.
+- Devtools to check whether app is responsive.
+- Jest for unit tests. 
 
-# What I've learnt
+# Styling
 
-- 
+- Bold colour scheme.
+- App to be reminiscent of Teletext (find teletext style font).
+- Information to be displayed on one screen.
+- Needs to be responsive.
+
+I created simple wireframes for each page of the app: 
+<img src="src/styles/images/playerPage.png" width="500px">
+<img src="src/styles/images/teamPage.png" width="500px">
+<img src="src/styles/images/aboutPage.png" width="500px">
+
+# Lessons learnt
+
+- I should have created Unit tests while writing the relevant functions, I tested them using the command line but it would be better to have easily reusable tests.
+- I would have planned the structure of my sass more carefully, I thought immediately styling css classnames would help, however this approach caused real problems when making sure the app was responsive.
+- To avoid this I should have used BEM (the Block, Element, Modifier methodology) and thought about universal styling from the offset.
