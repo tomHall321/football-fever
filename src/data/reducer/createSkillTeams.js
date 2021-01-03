@@ -4,6 +4,7 @@ const createSkillTeams = state => {
     let team1 = [];
     let team2 = [];
 
+    //playersAray ordered by skill
     let arrangeBySkill = (players) => {
         return playersArray.sort((a, b) => a.skill - b.skill);
     }
