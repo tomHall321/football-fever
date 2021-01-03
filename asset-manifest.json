@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/football-fever/static/css/main.de5916cf.chunk.css",
-    "main.js": "/football-fever/static/js/main.54717297.chunk.js",
-    "main.js.map": "/football-fever/static/js/main.54717297.chunk.js.map",
+    "main.css": "/football-fever/static/css/main.31d055b1.chunk.css",
+    "main.js": "/football-fever/static/js/main.cb6fee90.chunk.js",
+    "main.js.map": "/football-fever/static/js/main.cb6fee90.chunk.js.map",
     "runtime-main.js": "/football-fever/static/js/runtime-main.9257986a.js",
     "runtime-main.js.map": "/football-fever/static/js/runtime-main.9257986a.js.map",
     "static/js/2.72f413ce.chunk.js": "/football-fever/static/js/2.72f413ce.chunk.js",
     "static/js/2.72f413ce.chunk.js.map": "/football-fever/static/js/2.72f413ce.chunk.js.map",
     "index.html": "/football-fever/index.html",
-    "static/css/main.de5916cf.chunk.css.map": "/football-fever/static/css/main.de5916cf.chunk.css.map",
+    "static/css/main.31d055b1.chunk.css.map": "/football-fever/static/css/main.31d055b1.chunk.css.map",
     "static/js/2.72f413ce.chunk.js.LICENSE.txt": "/football-fever/static/js/2.72f413ce.chunk.js.LICENSE.txt",
     "static/media/index.css": "/football-fever/static/media/Modeseven.8cd71d7c.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.9257986a.js",
     "static/js/2.72f413ce.chunk.js",
-    "static/css/main.de5916cf.chunk.css",
-    "static/js/main.54717297.chunk.js"
+    "static/css/main.31d055b1.chunk.css",
+    "static/js/main.cb6fee90.chunk.js"
   ]
 }
