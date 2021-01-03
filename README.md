@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Football fever
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technical challenge set by DevelopMe.
 
-## Available Scripts
+Can be viewed online [here](http://https://tomhall321.github.io/football-fever/).
 
-In the project directory, you can run:
+## Setup
 
-### `npm start`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Requirements
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+You will need to have npm installed in order to set the application up.
 
-### `npm test`
+### Installing
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the git repository and run npm install.
 
-### `npm run build`
+`git clone git@github.com:tomHall321/football-fever.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npm install`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+When all the packages are installed, run the app:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`npm start`
 
-### `npm run eject`
+Open http://localhost:3000 to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Brief
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a tool which randomly picks 5-a-side football teams from a list of 10 names.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Planning
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+As per the brief, the MVP was to build an app that could take 10 names and randomly assign them to two separate teams of 5.
+ 
+In addition to this I set out a list of features I wanted to achieve:
 
-## Learn More
+- Specify number of players (minimum 2, maximum 22).
+- Sort the teams based on player skill level.
+- Set team names.
+- The team list should include player name and player skill.
+- Ensure some degree of validation exists (blank player or team names should not be possible).
+- An about page to help the user understand the purpose of the application.
+- The app should persist for the user, and also have a reset function.
+- Build a back end using Laravel to track teams and players.
+- Unit tests for any complex functions.
+- Some end-to-end tests to make sure new features don't break the app.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Technical decisions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- I decided to use React to build the components and Redux to handle state management.
+- Conditional rendering instead of specifying routes with React-router.
+- If time allows, deploy a backend built using Laravel.
+- Git branch naming convention to focus my work (data/, logic/, components/, styling/).
 
-### Code Splitting
+# Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Redux dev tools to check that actions were happening and state was changing as expected.
+- Devtools to check whether app is responsive.
+- Jest for unit tests. 
 
-### Analyzing the Bundle Size
+# Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Bold colour scheme.
+- App to be reminiscent of Teletext (find teletext style font).
+- Information to be displayed on one screen.
+- Needs to be responsive.
 
-### Making a Progressive Web App
+I created simple wireframes for each page of the app: 
+<img src="src/styles/images/playerPage.png" width="500px">
+<img src="src/styles/images/teamPage.png" width="500px">
+<img src="src/styles/images/aboutPage.png" width="500px">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Lessons learnt
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- I should have created Unit tests while writing the relevant functions, I tested them using the command line but it would be better to have easily reusable tests.
+- I would have planned the structure of my sass more carefully, I thought immediately styling css classnames would help, however this approach caused real problems when making sure the app was responsive.
+- To avoid this I should have used BEM (the Block, Element, Modifier methodology) and thought about universal styling from the offset.
