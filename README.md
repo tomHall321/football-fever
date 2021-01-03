@@ -72,6 +72,12 @@ I created simple wireframes for each page of the app:
 <img src="src/styles/images/teamPage.png" width="500px">
 <img src="src/styles/images/aboutPage.png" width="500px">
 
+# Unfinished features
+
+- Laravel back end! As a result it's not possible to view previous team/player compositions. 
+- Unit tests.
+- End to end tests.
+
 # Lessons learnt
 
 - I should have created Unit tests while writing the relevant functions, I tested them using the command line but it would be better to have easily reusable tests.
