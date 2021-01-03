@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/football-fever/static/css/main.de5916cf.chunk.css",
-    "main.js": "/football-fever/static/js/main.bf8f0afa.chunk.js",
-    "main.js.map": "/football-fever/static/js/main.bf8f0afa.chunk.js.map",
+    "main.js": "/football-fever/static/js/main.192ccbce.chunk.js",
+    "main.js.map": "/football-fever/static/js/main.192ccbce.chunk.js.map",
     "runtime-main.js": "/football-fever/static/js/runtime-main.9257986a.js",
     "runtime-main.js.map": "/football-fever/static/js/runtime-main.9257986a.js.map",
     "static/js/2.72f413ce.chunk.js": "/football-fever/static/js/2.72f413ce.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.9257986a.js",
     "static/js/2.72f413ce.chunk.js",
     "static/css/main.de5916cf.chunk.css",
-    "static/js/main.bf8f0afa.chunk.js"
+    "static/js/main.192ccbce.chunk.js"
   ]
 }
