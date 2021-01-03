@@ -6,7 +6,7 @@ const AboutPageBtn = ({ handleClick, aboutPage }) => {
         <button
             onClick={ handleClick }
             className="btn-reset"
-        > {!aboutPage ? "About Page" : "Back to App" }</button>
+        > {!aboutPage ? "About App" : "Back to App" }</button>
     );
 
 };
