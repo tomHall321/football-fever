@@ -1,7 +1,5 @@
 # Football fever
 
-Technical challenge set by DevelopMe.
-
 Can be viewed online [here](https://tomhall321.github.io/football-fever/).
 
 ## Setup
